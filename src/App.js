@@ -3,6 +3,7 @@ import './App.css';
 import { Provider } from 'react-redux'
 import store from './redux/Store';
 import Mydashboard from './redux/Mydashboard';
+import MyApiData from './MyApiData';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
 
       <div className="App">
       <Mydashboard />
+      <MyApiData />
     </div>
       
     </Provider>
