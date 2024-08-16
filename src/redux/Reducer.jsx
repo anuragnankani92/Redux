@@ -1,5 +1,5 @@
 // import { total_orders,add_order } from "./Action";
-import { get_data } from "./Action"
+import { get_data, post_data } from "./Action"
 
 const initialState ={
     allData:[],
@@ -19,6 +19,12 @@ const reducer =(state = initialState, action)=>{
                     return{
                         ...state, allData:action.payload
                     }
+
+                    case post_data:
+                        return{
+                            state, allData:[...state.allData,action.payload]
+                        }
+
             default:
                 return state
     
